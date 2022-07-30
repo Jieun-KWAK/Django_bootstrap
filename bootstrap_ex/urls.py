@@ -19,5 +19,6 @@ import bootapp.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', bootapp.views.home),
+    path('', bootapp.views.home, name='home'),
+    path('about/', bootapp.views.about, name='about'),
 ]
